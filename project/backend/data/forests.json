@@ -1,0 +1,849 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Brolga Rainforest",
+        "type": "Conservation",
+        "description": "Situated in the Daintree National Park, the Brolga Forest was set established as a conservation area in the late 1990's. This conservation area is located in one of the most biologically diverse regions in the world. Aptly named after the state bird of Queensland, many Brolgas make a home within the conservation park which spans over 6.4 hectares of this UNESCO World Heritage site.",
+        "country": "Australia",
+        "country_code": "AU",
+        "image_url": "brolga_rainforest",
+        "carbon_stored": 737.65,
+        "carbon_stored_30_days": -2.95,
+        "bear_mortality": "N/A",
+        "critical_fire_risk": "Medium",
+        "stream_flow": "High",
+        "area_sqm": 64143.28
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              145.21852970123291,
+              -15.739574324709604
+            ],
+            [
+              145.218486785888672,
+              -15.740462406430471
+            ],
+            [
+              145.221211910247803,
+              -15.740421100389957
+            ],
+            [
+              145.222842693328857,
+              -15.740483059447596
+            ],
+            [
+              145.22453784942627,
+              -15.74044175341127
+            ],
+            [
+              145.224902629852295,
+              -15.739594977816944
+            ],
+            [
+              145.21852970123291,
+              -15.739574324709604
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Javan Hawk-Eagle Forest",
+        "type": "Conservation",
+        "description": "The Javan Hawk-Eagle Forest is situated on the Indonesian Island of West Papua in the mountainous regions between the cities of Sorong and Manokwari. This conservation park occupies a small area in the West of the Mamberamo Foja Wildlife Refuge. This is a highly mountainous region, mostly untouched by the detremental impacts of deforistation that have affected other areas of the Indonesian archipelago.",
+        "country": "Indonesia",
+        "country_code": "ID",
+        "image_url": "javan_hawk_eagle_forest",
+        "carbon_stored": 1421.85,
+        "carbon_stored_30_days": 5.69,
+        "bear_mortality": "N/A",
+        "critical_fire_risk": "Medium",
+        "stream_flow": "High",
+        "area_sqm": 123638.93
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              139.080948829650879,
+              -2.535168806040006
+            ],
+            [
+              139.080562591552734,
+              -2.53877016169088
+            ],
+            [
+              139.08292293548584,
+              -2.538727288468332
+            ],
+            [
+              139.083738327026367,
+              -2.539370386657282
+            ],
+            [
+              139.084725379943848,
+              -2.539713372227177
+            ],
+            [
+              139.085454940795898,
+              -2.538255682926363
+            ],
+            [
+              139.082880020141602,
+              -2.536969485119161
+            ],
+            [
+              139.080948829650879,
+              -2.535168806040006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Sulawesi Hornbill Conservation",
+        "type": "Conservation",
+        "description": "The Sulawesi Hornbill Conservation area lies on fertile soil and promotes a high growth rate for many of the endemic species of flora on the world's eleventh largest island. These fertile soils and high level of forest undergrowth provide a natural filtration system for the water entering the tributaries of the nearby Lake Lindu. This conservation area has seen a 15 percent increase in carbon sequestration since its estalishment in 2002.",
+        "country": "Indonesia",
+        "country_code": "ID",
+        "image_url": "sulawesi_hornbill_conservation",
+        "carbon_stored": 21.26,
+        "carbon_stored_30_days": 0.09,
+        "bear_mortality": "N/A",
+        "critical_fire_risk": "Medium",
+        "stream_flow": "High",
+        "area_sqm": 1848.99
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.130873918533325,
+              -1.382909236335458
+            ],
+            [
+              120.130873918533325,
+              -1.383177379097954
+            ],
+            [
+              120.13099193572998,
+              -1.383273910485029
+            ],
+            [
+              120.13134598731996,
+              -1.383370441868185
+            ],
+            [
+              120.131571292877197,
+              -1.383241733356441
+            ],
+            [
+              120.131678581237793,
+              -1.383145201968055
+            ],
+            [
+              120.131442546844482,
+              -1.383134476257992
+            ],
+            [
+              120.131131410598741,
+              -1.383134476257992
+            ],
+            [
+              120.13100266456604,
+              -1.383027219154683
+            ],
+            [
+              120.130873918533325,
+              -1.382909236335458
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The American Robin Conservation",
+        "type": "Conservation",
+        "description": "Michigan's Upper Peninsula is home to a hardy ecosystem that must survive the harsh winters and humid summers that a life on the 46th parallel brings. The American Robin Conservation is situated on the southern shores of Lake Superior. This area promotes a high growth rate of evergreen flora. Wolves, bobcats, black bears, white tail deer, and wolverines all visit and live in the American Robin Conservation area and promote a healthy and competitive ecosystem.",
+        "country": "United States of America",
+        "country_code": "US",
+        "image_url": "american_robin_conservation",
+        "carbon_stored": 83.38,
+        "carbon_stored_30_days": -0.33,
+        "bear_mortality": "Low",
+        "critical_fire_risk": "Medium",
+        "stream_flow": "High",
+        "area_sqm": 7250.01
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              275.330396890640259,
+              46.483050490763617
+            ],
+            [
+              275.330300331115723,
+              46.482969227704579
+            ],
+            [
+              275.330311059951782,
+              46.482873189387419
+            ],
+            [
+              275.330579280853271,
+              46.482873189387419
+            ],
+            [
+              275.330697298049927,
+              46.48278453848264
+            ],
+            [
+              275.330944061279297,
+              46.482762375733877
+            ],
+            [
+              275.331169366836491,
+              46.482710662618331
+            ],
+            [
+              275.331405401229802,
+              46.482710662618331
+            ],
+            [
+              275.331802368164062,
+              46.48279931364349
+            ],
+            [
+              275.331984758377075,
+              46.482814088800289
+            ],
+            [
+              275.332285165786743,
+              46.482836251527985
+            ],
+            [
+              275.332564115524292,
+              46.48282147637719
+            ],
+            [
+              275.332682132720947,
+              46.482754988148933
+            ],
+            [
+              275.332735776901245,
+              46.48278453848264
+            ],
+            [
+              275.332746505737305,
+              46.482865801817546
+            ],
+            [
+              275.332725048065186,
+              46.483006165473739
+            ],
+            [
+              275.332456827163639,
+              46.483065265852225
+            ],
+            [
+              275.332049131393376,
+              46.483087428477589
+            ],
+            [
+              275.331888198852482,
+              46.483087428477589
+            ],
+            [
+              275.331705808639526,
+              46.483168691360063
+            ],
+            [
+              275.331544876098633,
+              46.48324995412117
+            ],
+            [
+              275.331330299377385,
+              46.483227791561994
+            ],
+            [
+              275.331223011016846,
+              46.483242566602435
+            ],
+            [
+              275.330933332443237,
+              46.483227791561994
+            ],
+            [
+              275.330750942230225,
+              46.483190853943313
+            ],
+            [
+              275.330590009689331,
+              46.483139141235029
+            ],
+            [
+              275.330396890640259,
+              46.483050490763617
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Black-Capped Chickadee Forest",
+        "type": "Reforestation",
+        "description": "The Black-Capped Chickadee Forest is a reforestation area that has seen significant planting efforts in the previous decade. The recent growth of native tree species has resulted in an increase of habitat and subsequent return of the Black Capped Chickadee, Maine's native bird. The forest is large in size, occupying 347 hectares of land on the south western shores of the Lower Shin Pond.",
+        "country": "United States of America",
+        "country_code": "US",
+        "image_url": "black_capped_chickadee_forest",
+        "carbon_stored": 39973.46,
+        "carbon_stored_30_days": 159.89,
+        "bear_mortality": "Medium",
+        "critical_fire_risk": "Medium",
+        "stream_flow": "High",
+        "area_sqm": 3475953.46
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              291.421108245849609,
+              46.084304706472494
+            ],
+            [
+              291.420936584472656,
+              46.087876516576642
+            ],
+            [
+              291.417675018310547,
+              46.087876516576642
+            ],
+            [
+              291.412868499755859,
+              46.08811462902726
+            ],
+            [
+              291.409606933593693,
+              46.087876516576642
+            ],
+            [
+              291.406517028808594,
+              46.085019086995096
+            ],
+            [
+              291.405143737792969,
+              46.082994984821113
+            ],
+            [
+              291.4013671875,
+              46.080494520781073
+            ],
+            [
+              291.400165557861328,
+              46.078946557680077
+            ],
+            [
+              291.400165557861328,
+              46.075850501193628
+            ],
+            [
+              291.401023864746094,
+              46.074183321902574
+            ],
+            [
+              291.401023864746094,
+              46.071682458528429
+            ],
+            [
+              291.400337219238281,
+              46.067990500712412
+            ],
+            [
+              291.400852203369141,
+              46.066203980854851
+            ],
+            [
+              291.400852203369141,
+              46.064298295943523
+            ],
+            [
+              291.4013671875,
+              46.062273433643433
+            ],
+            [
+              291.403255462646484,
+              46.060486728763038
+            ],
+            [
+              291.405830383300781,
+              46.059652913364957
+            ],
+            [
+              291.407890319824219,
+              46.059772030621311
+            ],
+            [
+              291.409435272216797,
+              46.059772030621311
+            ],
+            [
+              291.410636901855469,
+              46.060605844220596
+            ],
+            [
+              291.411495208740234,
+              46.062154321783588
+            ],
+            [
+              291.412696838378906,
+              46.063940972698852
+            ],
+            [
+              291.413211822509766,
+              46.066084877475213
+            ],
+            [
+              291.413211822509766,
+              46.066799493898436
+            ],
+            [
+              291.413211822509766,
+              46.07001515332049
+            ],
+            [
+              291.413555145263615,
+              46.072039731663025
+            ],
+            [
+              291.415958404541016,
+              46.074183321902574
+            ],
+            [
+              291.418190002441406,
+              46.07549325272845
+            ],
+            [
+              291.419048309326172,
+              46.077517630118123
+            ],
+            [
+              291.419906616210938,
+              46.079184708676145
+            ],
+            [
+              291.421623229980469,
+              46.080613593066978
+            ],
+            [
+              291.422481536865234,
+              46.082042440454018
+            ],
+            [
+              291.424198150634709,
+              46.082875917674606
+            ],
+            [
+              291.421108245849609,
+              46.084304706472494
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Grey Jay Forest",
+        "type": "Reforestation",
+        "description": "The Grey Jay Forest occupies 38 hectares of land adjacent to the northern boundary of Carp Lake Provincial Park. Reforistation efforts have focused on planting lodgepole pine, white spruce, subalpine fir, trembling aspen, paper birch, and black cottonwood. These particular species are known to thrive and contribute to a high level of carbon sequestration in these Engelmann Spruce/Sub-alpine Fir zones.",
+        "country": "Canada",
+        "country_code": "CA",
+        "image_url": "grey_jay_forest",
+        "carbon_stored": 4395.66,
+        "carbon_stored_30_days": 17.58,
+        "bear_mortality": "Low",
+        "critical_fire_risk": "Medium",
+        "stream_flow": "High",
+        "area_sqm": 382231.01
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              236.661386489868136,
+              54.855688050813583
+            ],
+            [
+              236.661901473999023,
+              54.854625777916439
+            ],
+            [
+              236.662759780883761,
+              54.853884640722626
+            ],
+            [
+              236.664090156555176,
+              54.853785821401225
+            ],
+            [
+              236.665763854980469,
+              54.853835231092205
+            ],
+            [
+              236.667351722717257,
+              54.85358818203219
+            ],
+            [
+              236.668767929077148,
+              54.853341131459096
+            ],
+            [
+              236.6697549819946,
+              54.853192900388976
+            ],
+            [
+              236.670870780944824,
+              54.853192900388976
+            ],
+            [
+              236.671900749206543,
+              54.853909345515163
+            ],
+            [
+              236.672372817993164,
+              54.855218677866908
+            ],
+            [
+              236.673102378845215,
+              54.855959790549356
+            ],
+            [
+              236.673617362976046,
+              54.856503264528627
+            ],
+            [
+              236.67250156402585,
+              54.857886619795288
+            ],
+            [
+              236.672072410583496,
+              54.858627683456227
+            ],
+            [
+              236.672072410583496,
+              54.859492240517206
+            ],
+            [
+              236.673274040222168,
+              54.859912161545239
+            ],
+            [
+              236.673574447631836,
+              54.860900193775315
+            ],
+            [
+              236.673145294189425,
+              54.861344800381339
+            ],
+            [
+              236.672544479370117,
+              54.860924894270923
+            ],
+            [
+              236.671299934387179,
+              54.860159171872176
+            ],
+            [
+              236.670269966125488,
+              54.859689850957416
+            ],
+            [
+              236.668896675109863,
+              54.859121718331949
+            ],
+            [
+              236.66722297668457,
+              54.858627683456227
+            ],
+            [
+              236.665248870849581,
+              54.858010131351072
+            ],
+            [
+              236.664218902587919,
+              54.857441975062628
+            ],
+            [
+              236.663403511047335,
+              54.856898513732148
+            ],
+            [
+              236.662373542785645,
+              54.856058604544806
+            ],
+            [
+              236.661386489868136,
+              54.855688050813583
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Bellied Thrush Conservatory",
+        "type": "Conservation",
+        "description": "Land for the Bellied Thrush Conservatory was set aside in 2014 after the Brazilian government identified a high level of illegal logging in the area of the previous decade. The conservation area lies on the southern slope of a mountain range that feeds into a tributary of the Lago de Serra de Mesa. With only 40 percent of the conservatory's planted trees being considered 'mature', there is still considerable benefits to come from this forest.",
+        "country": "Brazil",
+        "country_code": "BR",
+        "image_url": "bellied_thrush_conservatory",
+        "carbon_stored": 13229.18,
+        "carbon_stored_30_days": -52.92,
+        "bear_mortality": "N/A",
+        "critical_fire_risk": "Medium",
+        "stream_flow": "High",
+        "area_sqm": 1150363.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              312.203893661499023,
+              -14.183513322923174
+            ],
+            [
+              312.202606201171875,
+              -14.18509438752999
+            ],
+            [
+              312.202606201171875,
+              -14.186425801803466
+            ],
+            [
+              312.20123291015625,
+              -14.187174718895434
+            ],
+            [
+              312.200374603271428,
+              -14.188755757962664
+            ],
+            [
+              312.20097541809082,
+              -14.191751380681859
+            ],
+            [
+              312.202863693237305,
+              -14.190503209361754
+            ],
+            [
+              312.206211090087891,
+              -14.190503209361754
+            ],
+            [
+              312.207584381103516,
+              -14.189587879357129
+            ],
+            [
+              312.207584381103516,
+              -14.188090058647125
+            ],
+            [
+              312.208099365234375,
+              -14.185760095644289
+            ],
+            [
+              312.208271026611271,
+              -14.183846179546244
+            ],
+            [
+              312.209386825561523,
+              -14.184012607674507
+            ],
+            [
+              312.20955848693842,
+              -14.184761532739682
+            ],
+            [
+              312.212390899658203,
+              -14.184761532739682
+            ],
+            [
+              312.213678359985352,
+              -14.183846179546244
+            ],
+            [
+              312.214365005493164,
+              -14.183346894428368
+            ],
+            [
+              312.214536666870117,
+              -14.182681179227385
+            ],
+            [
+              312.214536666870117,
+              -14.181266527935056
+            ],
+            [
+              312.214365005493164,
+              -14.179602220997229
+            ],
+            [
+              312.213163375854492,
+              -14.180517591324698
+            ],
+            [
+              312.21247673034668,
+              -14.179685436634241
+            ],
+            [
+              312.212047576904297,
+              -14.179019710683198
+            ],
+            [
+              312.212219238281193,
+              -14.178021118092387
+            ],
+            [
+              312.21196174621582,
+              -14.177188954241309
+            ],
+            [
+              312.210416793823242,
+              -14.176689654465111
+            ],
+            [
+              312.208528518676758,
+              -14.177272170763814
+            ],
+            [
+              312.206983566284123,
+              -14.178686846974808
+            ],
+            [
+              312.206554412841797,
+              -14.179935083362025
+            ],
+            [
+              312.205438613891602,
+              -14.181349742961288
+            ],
+            [
+              312.203893661499023,
+              -14.183513322923174
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Rufous Hornero Park",
+        "type": "Conservation",
+        "description": "The Rufous Hornero Park is one of the southern most conservation areas in the world. The area occupies 1410 hectares of land off the coast of the Southern Atlantic Ocean. The solitary placement of this conservation area ensures the protection of the forest from illegal logging and other detremental practices.",
+        "country": "Argentina",
+        "country_code": "AR",
+        "image_url": "rufous_hornero_park",
+        "carbon_stored": 162209.42,
+        "carbon_stored_30_days": -648.84,
+        "bear_mortality": "N/A",
+        "critical_fire_risk": "Medium",
+        "stream_flow": "High",
+        "area_sqm": 14105166.79
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              293.056869506835938,
+              -54.329338048252517
+            ],
+            [
+              293.056869506835938,
+              -54.344150193974535
+            ],
+            [
+              293.05755615234375,
+              -54.355755983615815
+            ],
+            [
+              293.0712890625,
+              -54.355755983615815
+            ],
+            [
+              293.086395263671875,
+              -54.348552775876051
+            ],
+            [
+              293.103561401367188,
+              -54.343749935871436
+            ],
+            [
+              293.122100830078125,
+              -54.341348305403756
+            ],
+            [
+              293.1427001953125,
+              -54.334542923740713
+            ],
+            [
+              293.148880004882812,
+              -54.330539231836802
+            ],
+            [
+              293.142013549804631,
+              -54.324132513967413
+            ],
+            [
+              293.130340576171875,
+              -54.318926320845023
+            ],
+            [
+              293.114547729492188,
+              -54.323732060964574
+            ],
+            [
+              293.096008300781193,
+              -54.32453296307181
+            ],
+            [
+              293.076095581054688,
+              -54.32453296307181
+            ],
+            [
+              293.060302734375,
+              -54.325333849585341
+            ],
+            [
+              293.056869506835938,
+              -54.329338048252517
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+version: "3.8"
+
+services:
+  pachama-db:
+    build:
+      context: ./project/backend/db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - RUNNING_ENVIRONMENT=local
+    ports:
+      - 5432:5432
+
+  pachama-api:
+    build: ./project/backend
+    command: [
+      "uvicorn",
+      "api.main:app",
+      "--reload",
+      "--workers",
+      "1",
+      "--host",
+      "0.0.0.0",
+      "--port",
+      "8000"
+    ]
+    volumes:
+      - ./project/backend:/usr/src/app
+    ports:
+      - 8004:8000
+    environment:
+      - ENVIRONMENT=dev
+      - TESTING=0
+      - DATABASE_URL=postgresql://postgres:postgres@pachama-db:5432/pachama_dev
+      - DATABASE_TEST_URL=postgresql://postgres:postgres@pachama-db:5432/pachama_test
+    depends_on:
+      - pachama-db
+  
+  pachama-frontend:
+    image: "node:16"
+    working_dir: "/srv/app"
+    command: ["./entrypoint.sh"]
+    volumes:
+      - "./project/frontend:/srv/app"
+    ports:
+      - 3000:3000
+    depends_on: 
+      - pachama-api

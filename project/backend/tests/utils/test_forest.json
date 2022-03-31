@@ -1,0 +1,52 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "The Brolga Rainforest",
+    "type": "Conservation",
+    "description": "Situated in the Daintree National Park, the Brolga Forest was set established as a conservation area in the late 1990's. This conservation area is located in one of the most biologically diverse regions in the world. Aptly named after the state bird of Queensland, many Brolgas make a home within the conservation park which spans over 6.4 hectares of this UNESCO World Heritage site.",
+    "country": "Australia",
+    "country_code": "AU",
+    "image_url": "brolga_rainforest",
+    "carbon_stored": 737.65,
+    "carbon_stored_30_days": -2.95,
+    "bear_mortality": "N/A",
+    "critical_fire_risk": "Medium",
+    "stream_flow": "High",
+    "area_sqm": 64143.28
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          145.21852970123291,
+          -15.739574324709604
+        ],
+        [
+          145.218486785888672,
+          -15.740462406430471
+        ],
+        [
+          145.221211910247803,
+          -15.740421100389957
+        ],
+        [
+          145.222842693328857,
+          -15.740483059447596
+        ],
+        [
+          145.22453784942627,
+          -15.74044175341127
+        ],
+        [
+          145.224902629852295,
+          -15.739594977816944
+        ],
+        [
+          145.21852970123291,
+          -15.739574324709604
+        ]
+      ]
+    ]
+  }
+}
