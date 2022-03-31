@@ -18,11 +18,9 @@ I have chosen to use **PostgreSQL + PostGIS** for the database, **FastAPI + SQLA
 
 ## Quick start
 
-Ensure that the you have a .env file located at [/project/frontend](/project/frontend) with a Mapbox api access token mapped to the following key:  
+> **note**: I have committed the .env file containing the mapbox API access token used on the frontend. Clearly, I would not include this in source control outside the context of this delivery.
 
-> `VITE_REACT_MAP_ACCESS_TOKEN`
-
-And then run the following from the project root on a machine running Docker.:
+Run the following from the project root on a machine running Docker.:
 
 > `docker-compose up --build`
 
