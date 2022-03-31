@@ -18,13 +18,11 @@ I have chosen to use **PostgreSQL + PostGIS** for the database, **FastAPI + SQLA
 
 ## Quick start
 
-Run the following from the project root on a machine running Docker.
-
 Ensure that the you have a .env file located at [/project/frontend](/project/frontend) with a Mapbox api access token mapped to the following key:  
 
 > `VITE_REACT_MAP_ACCESS_TOKEN`
 
-And then run:
+And then run the following from the project root on a machine running Docker.:
 
 > `docker-compose up --build`
 
@@ -54,24 +52,24 @@ The base image for the API container is the official python base image. This ima
 
 This images entrypoint contains a health check to ensure that the PostgreSQL database is active and running before starting the API. Once the database has connected I exec Python's `alembic upgrade heads` to build the database table based on the initial revision.
 
-**note:** I have had to configure the alembic.ini file to stop the alembic revisions from dropping the required but empty spatial_ref_sys table that comes as part of PostGIS. I have also had to import Python's geoalchemy2 module into the initial revision file to ensure that the spatial column can be built.
+> **note:** I have had to configure the alembic.ini file to stop the alembic revisions from dropping the required but empty spatial_ref_sys table that comes as part of PostGIS. I have also had to import Python's geoalchemy2 module into the initial revision file to ensure that the spatial column can be built.
 
 Once the table is up, I seed the database using a script. The script uses sqlalchemy to instantiate a connection to the running database and populates rows in the newly created Forest table from a locally hosted geojson file.
 
 ### Test-Driven Development
 
-I have applied test-driven development practises to developing the api. I use **pytest** to create a test fixture to run the tests. The fixture function does a couple of things. Firstly, it overrides two dependencies of my FastAPI application. These being the database settings (switches dev to test), and the get_db function (switches from using the dev dbb configured sqlalchemy orm session maker to a test sessionmaker). Finally, the function yields a TestClient instance using our new test configured FastAPI application. This test client is handy as it uses the requests library to make requests against the app.
+I have applied test-driven development practises to developing the api. I use **pytest** to create a test fixture to run the tests. The fixture function does a couple of things. Firstly, it overrides two dependencies of my FastAPI application. These being the database settings (switches dev to test), and the get_db function (switches from using the dev db configured sqlalchemy orm session maker to a test sessionmaker). Finally, the function yields a TestClient instance using our new test configured FastAPI application. This test client is handy as it uses the requests library to make requests against the app.
 
 To run the unit tests, run the following command while the containers are up:
 > `docker-compose exec pachama-api python -m pytest -p no:warnings -s`
 
 ### REST API Routes
 
-There are two API REST endpoints running on the /forests path. Both can be described in the [Swagger docs](http://localhost:8004/docs#/).
+There are two API REST endpoints running on the /forests path. Both can be described in the [Swagger docs](http://localhost:8004/docs#/) once up and running.
 
-The `/forests` path executes a GET request and intends to fetch a limited view of all forests. This path services the gallery view of the front-end application. I use `fastapi-pagination` to provide out of the box pagination controls over the API route.
+The `/forests` path executes a GET request and intends to fetch a limited information view of all forests. This path services the gallery view of the front-end application. I use `fastapi-pagination` to provide out of the box pagination controls over the API route.
 
-The `/forests/{id}` route executes a GET request and intends to fetch the forest in question and return a full view in geojson format. This path services the forest detail page. I have chosen to write the output to geojson by default as I use it in the mapping components on the front-end for a cool geo-viz.
+The `/forests/{id}` route executes a GET request and intends to fetch the forest in question and return a full view in geojson format. This path services the forest detail page. I have chosen to write the output to geojson by default as I use it in the mapping components on the front-end for a geo-viz.
 
 All routes are validated using `pydantic` models to ensure that the response object from the database is what the API is expecting.
 
