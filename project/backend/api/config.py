@@ -6,7 +6,10 @@ from pydantic import AnyUrl, BaseSettings
 
 log = logging.getLogger("uvicorn")
 
-# Settings congif class that reads from env and can be shared / overriden for use between databases
+# Settings congif class that reads from env and can
+# be shared / overriden for use between databases
+
+
 class Settings(BaseSettings):
     environment: str = os.getenv("ENVIRONMENT", "dev")
     testing: bool = os.getenv("TESTING", 0)

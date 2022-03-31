@@ -1,10 +1,13 @@
 import json
-from sqlalchemy.orm import sessionmaker
-from api.db import SessionLocal
-from api.models.models import Forest
+
 from shapely.geometry import shape
 
-# Function to convert a forest geojson feature to a Sqlalchemy Forest table object
+from api.db import SessionLocal
+from api.models.models import Forest
+
+
+# Function to convert a forest geojson
+# feature to a Sqlalchemy Forest table object
 def forest_from_feature(feature):
 
     properties = feature["properties"]
@@ -23,7 +26,7 @@ def forest_from_feature(feature):
         critical_fire_risk=properties["critical_fire_risk"],
         stream_flow=properties["stream_flow"],
         area_sqm=properties["area_sqm"],
-        geom=shape(geom).wkt
+        geom=shape(geom).wkt,
     )
 
     return forest

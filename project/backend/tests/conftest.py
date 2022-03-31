@@ -1,17 +1,14 @@
-import os 
+import os
 
 import pytest
-from starlette.testclient import TestClient
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from starlette.testclient import TestClient
 
-from api.main import create_application
-
-from api.config import get_settings, Settings
-
-from api.models.models import Base
+from api.config import Settings, get_settings
 from api.db import get_db
+from api.main import create_application
+from api.models.models import Base
 
 
 # function to return settings config object for use by FastAPI app
@@ -23,6 +20,7 @@ def get_settings_override():
 test_engine = create_engine(os.environ.get("DATABASE_TEST_URL"))
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=test_engine)
 Base.metadata.create_all(bind=test_engine)
+
 
 # db connection to pass to test FastAPI routes
 def get_db_override():
@@ -43,5 +41,5 @@ def test_app_with_db():
 
     # yield a testclient using our new test app
     with TestClient(app) as test_client:
-         
-         yield test_client
+
+        yield test_client

@@ -1,14 +1,13 @@
 import sqlalchemy.dialects.postgresql as pg
 from geoalchemy2 import Geometry
-from sqlalchemy import Column, ForeignKey
-from sqlalchemy.orm import relationship
+from sqlalchemy import Column
 from sqlalchemy.ext.declarative import declarative_base
-
 
 from api.models.enums import ForestType, ThreeTierRanking
 
 # set up the base for the models
 Base = declarative_base()
+
 
 # Table schema for a Forest table
 # Note: this table is only intended for a database that supports PostGIS

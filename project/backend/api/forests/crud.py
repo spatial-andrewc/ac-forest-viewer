@@ -1,17 +1,16 @@
+from typing import List, Optional
+from urllib.parse import unquote_plus
+
+from fastapi import HTTPException
 from sqlalchemy.orm import Session
+from sqlalchemy.sql import text
+
 from api.models import schemas
 from api.models.models import Forest
-from typing import List, Optional
-from fastapi import HTTPException
-from sqlalchemy import func
-from sqlalchemy.sql import text
-from urllib.parse import unquote_plus
 
 
 def get_all_forests(
-    search_query: Optional[str],
-    forest_type: Optional[str],
-    db_connection: Session
+    search_query: Optional[str], forest_type: Optional[str], db_connection: Session
 ) -> List[schemas.ForestResponseSchema]:
 
     # query forest table
@@ -21,22 +20,23 @@ def get_all_forests(
         Forest.type,
         Forest.description,
         Forest.image_url,
-        Forest.country_code
+        Forest.country_code,
     )
 
     if search_query:
-        
+
         db_connection.execute("SET pg_trgm.similarity_threshold = 0.3")
-        fuzzy_search_query = query.filter(Forest.name.op("%")(unquote_plus(search_query)))
+        fuzzy_search_query = query.filter(
+            Forest.name.op("%")(unquote_plus(search_query))
+        )
 
         if fuzzy_search_query.all():
 
             query = fuzzy_search_query
-    
+
     if forest_type:
         query = query.filter(Forest.type == forest_type)
 
-    
     # fetch results from the query and return the list of objects
     return [
         {
@@ -45,8 +45,9 @@ def get_all_forests(
             "type": f_type,
             "description": f_description,
             "image_url": f_image_url,
-            "country_code": f_country_code
-        } for f_id, f_name, f_type, f_description, f_image_url, f_country_code in query.all()
+            "country_code": f_country_code,
+        }
+        for f_id, f_name, f_type, f_description, f_image_url, f_country_code in query.all()
     ]
 
 
@@ -65,14 +66,16 @@ def get_forest(db_connection: Session, id: int):
                                 TO_JSONB(PROPERTIES)) AS FEATURE
         FROM
             (SELECT *, ST_AsGEOJSON(ST_centroid(GEOM))::JSONB as lng_lat
-            FROM FOREST 
+            FROM FOREST
             WHERE ID={id}) PROPERTIES
-        """.format(**{"id": id})
+        """.format(
+            **{"id": id}
+        )
     )
 
     record = db_connection.execute(query).scalar()
 
     if not record:
         raise HTTPException(status_code=404, detail=f"Forest record '{id}' not found")
-    
+
     return record

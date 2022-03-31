@@ -1,9 +1,12 @@
-from pydantic import BaseModel, Json
+from typing import Dict, Literal
+
+from pydantic import BaseModel
+
 from api.models.enums import ForestType, ThreeTierRanking
-from typing import List, Dict, Literal
 
+# Pydantic response schemas for use in type
+# casting and validating using FastAPI
 
-# Pydantic response schemas for use in type casting and validating using FastAPI
 
 class ForestResponseSchema(BaseModel):
     id: int
@@ -11,7 +14,7 @@ class ForestResponseSchema(BaseModel):
     type: ForestType
     description: str
     image_url: str
-    country_code: str  
+    country_code: str
 
 
 class ForestDetailProperties(ForestResponseSchema):
