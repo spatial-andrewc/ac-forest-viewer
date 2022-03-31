@@ -11,7 +11,7 @@ ENV PYTHONPATH "${PYTHONPATH}:/app/"
 
 # install system dependencies
 RUN apt-get update \
-  && apt-get -y install netcat gcc postgresql libpq-dev \
+  && apt-get -y install netcat gcc postgresql libpq-dev libgeos-dev \
   && apt-get clean
 
 
